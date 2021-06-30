@@ -1,0 +1,92 @@
+                            JAVASCRIPT
+
+1. Hoisting
+-> Hoisting is javascript default behaviour of moving variables and function declaraions to the top of the current scope before code execution.
+
+2. Coercion
+-> Implicit conversion of values from one data type to another, this includes conversion from Number to String, String to Number.
+
+3. Objects copying
+    1. Shallow copy
+    2. Deep copy
+
+-> A deep copying means that value of the new variable is disconnected from the original variable while a shallow copy means that some values are still connected to the original variable.
+
+4. Object reference
+-> Objects are assigned and copied by reference. In other words, a variable stores not the "object value", but a "reference" (address in memory) for the value. So copying such a variable or passing it as a function argument copies the reference, not the object itself.
+
+5. HOF (Higher order function)
+-> HOF are functions that take other functions as arguments or return functions as their result.
+-> Any function that is passed as an argument is called a callback function.
+
+6. Closure
+-> When an function returns an another function the inner function have the lexical scope of outer function.
+
+7. Currying
+-> Currying is a techniqe of evaluating function with multiple arguments, into sequence of functions with single argument. In other words, when a function, instead of taking all arguments at one time, takes the first one and return a new function that takes the second one and returns a new function which takes the third one ans so on, untill all arguments have been fulfilled.
+
+-> It helps to avoid passing same variable again and again
+-> It is extremely useful in event handling
+
+8. Promise
+-> Promise is in one of these states:
+    1. pending - initial state, neither fulfilled nor rejected
+    2. fulfilled - meaning that the operation was completed successfully.
+    3. rejected - meaning that the operation failed.
+
+-----------------------------------------------------------
+
+                            REACT
+1. VirtualDOM
+-> The virtual DOM (VDOM) is a programming concept where an ideal, or “virtual”, representation of a UI is kept in memory and synced with the “real” DOM by a library such as ReactDOM. This process is called reconciliation.
+-> In simple copy of real DOM
+
+2. Constructor
+-> In react constructors are only used for two purposes
+    1. Initializing local state by assigning an object to this.state
+    2. Binding event handler methods to an instance.
+
+3. Life cycle methods in react
+    1. componentDidMount() -> It is invoked immediately after a component is mounted (inserted into the tree).
+    -> Equivalent to useEffect() with empty dependency
+        eg. useEffect(()=>{
+            //code
+        }, [])
+
+
+    2. componentDidUpdate() -> It is invoked immediately after updating occurs. This method is not called for the initial render.
+    -> Equivalent to useEffect() with some dependency value
+        eg. useEffect(()=>{
+            //code
+        }, [user])
+
+    3. componentWillUnmount() -> It is invoked immediately before a component is unmounted and destroyed. (this method is called when a component is being removed from the DOM)
+    -> Equivalent to useEffect() with some dependency value with clean up function
+        eg. useEffect(()=>{
+            //code
+            return ()=>{
+                //clean up
+            }
+        }, [user])
+
+4. Pure component
+-> Pure components in React are the components which do not re-renders when the value of state and props has been updated with the same values. If the value of the previous state or props and the new state or props is the same, the component is not re-rendered. Pure components restricts the re-redering ensuring higher performance of the component.
+
+5. Higher Order components
+-> a higher-order component is a function that takes a component and returns a new component.
+
+6. axios -> returns data directly into json format
+   fetch -> we manually need to convert the data in json format.
+
+7. localstorage
+    1.// setter
+    localStorage.setItem('myData', data);
+ 
+    2.// getter
+    localStorage.getItem('myData');
+
+    3.// remove
+    localStorage.removeItem('myData');
+ 
+    4.// remove all
+    localStorage.clear();
