@@ -147,19 +147,19 @@ console.log(vowel("javascript"));
 
 // occurence of letter in a string
 
-let arr = ["amir", "kali", "aqib"];
-let obj = {
-  name: "amir",
-  age: 20,
-};
+// let arr = ["amir", "kali", "aqib"];
+// let obj = {
+//   name: "amir",
+//   age: 20,
+// };
 
-for (let i of arr) {
-  console.log(i);
-}
+// for (let i of arr) {
+//   console.log(i);
+// }
 
-for (let item in obj) {
-  console.log(obj[item]);
-}
+// for (let item in obj) {
+//   console.log(obj[item]);
+// }
 
 function countLetter(str) {
   let newStr = str.toLowerCase();
