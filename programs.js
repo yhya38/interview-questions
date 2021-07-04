@@ -29,7 +29,6 @@ function sortArray(arr) {
 
 console.log(sortArray(arr));
 
-
 // 2. palindrome
 // without using inbuilt function
 function checkPalindrome(str) {
@@ -43,10 +42,10 @@ function checkPalindrome(str) {
 }
 
 console.log(checkPalindrome("madam"));
- //Prints: It is a palindrome
- 
- console.log(checPalindrome("hello"));
- //Prints: It is not a palindrome
+//Prints: It is a palindrome
+
+console.log(checPalindrome("hello"));
+//Prints: It is not a palindrome
 
 //  using inbuilt methon
 function palindrome(str) {
@@ -108,9 +107,7 @@ console.log(fact1(5));
 
 // write a program to reverse a string
 
-
 console.log(reverseStr("hello"));
-
 
 // fizzbuzz
 
@@ -176,6 +173,18 @@ function countLetter(str) {
 
 console.log(countLetter("yahiya"));
 
+// write a program, name of "iam_promise" which takes one parameter it should resolved the promise if the paramter is equal to "iam_boolean" else it should reject the promise.
 
+function iam_promise(key) {
+  return new Promise((resolve, reject) => {
+    if (key === "iam_boolean") {
+      resolve("resolved");
+    } else {
+      reject("rejected");
+    }
+  });
+}
 
-
+iam_promise("iam_boolean")
+  .then((data) => console.log(data))
+  .catch((err) => console.log(err));
