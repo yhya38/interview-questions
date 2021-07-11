@@ -1,0 +1,11 @@
+Merge Sort algorithm
+
+-> Merge sort divides the array in to two sub arrays and later divides each array in to another two arrays and so on until a bunch of single element arrays are left. For instance, in the following example the array [4,7,5,9,1,3,8,2] divides in to single array elements such as [4], [7], [5], [9], [1], [3], [8], [2].
+
+-> It starts comparing arrays in such a manner that two arrays are compared and concatenated. In the following example, it compares two arrays at a time that is  [4], [7] are compared and concatenated then [5], [9] are compared and concatenated and so on such that arrays [4,7], [5,9], [1,3], [2,8] are formed.
+
+-> It follows the same way that is two-two arrays are compared and concatenated to form two arrays. In the following example [4,7]  and [5,9] are compared and concatenated to get an array as [4,5,7,9] and same is the case with other two arrays to form an array as [1,2,3,8].
+
+-> Same rule applicable here that is the remaining two arrays compares and concatenates to get a final array as [1,2,3,4,5,7,8,9].
+
+-> The time complexity of MergeSort is O(n*Log n) in all the 3 cases (worst, average and best) as the mergesort always divides the array into two halves and takes linear time to merge two halves.

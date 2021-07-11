@@ -1,0 +1,32 @@
+Bubble sort algorithm;
+
+-> Its an algorithm to sort an array in ascending order.
+-> lighter elements (smaller elements) move towards left and heavier elements (larger elements) move towards right
+-> stable algorithm
+-> time complexity is O(n2) -> BIG O  of n square
+-> for already sorted array we can make it O(n) by applying some logic i.e we can make it as adaptive algorithm
+-> number of comparision is (n-1) i.e array.length - 1
+
+Eg: [6,4,1,77,11,5]
+
+Comparisions                    index
+1st -> 4,6,1,77,11,5            (0,1)
+       4,1,6,77,11,5            (1,2)
+       4,1,6,77,11,5            (2,3)
+       4,1,6,11,77,5            (3,4)
+       4,1,6,11,5,77            (4,5)    
+
+2nd -> 1,4,6,11,5,77            (0,1)
+       1,4,6,11,5,77            (1,2)
+       1,4,6,11,5,77            (2,3)
+       1,4,6,5,11,77            (3,4)
+
+3rd -> 1,4,6,5,11,77            (0,1)
+       1,4,6,5,11,77            (1,2)
+       1,4,5,6,11,77            (2,3)
+
+4th -> 1,4,5,6,11,77            (0,1)
+       1,4,5,6,11,77            (1,2)
+    
+5th -> 1,4,5,6,11,77            (0,1)
+
