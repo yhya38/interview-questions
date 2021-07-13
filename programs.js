@@ -242,4 +242,18 @@ const compare = (obj1, obj2) => {
 console.log(compare(obj1, obj2));
 
 
+function solve(grades) {
+  return grades.map((n) => {
+    let diff = 5 - (n % 5);
+    if (diff < 3 && n >= 38) {
+      n += diff;
+    }
+
+    return n;
+  });
+}
+
+console.log(solve([72]));
+
+
 
